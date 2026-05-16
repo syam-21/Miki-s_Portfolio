@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sabikun Nahar Miki | BSc Nursing Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Custom Cursor Follower -->
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Floating blobs -->
+  <div class="blob-container" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+  </div>
+
+  <!-- Particles -->
+  <div class="particles" aria-hidden="true">
+    <span class="particle p1">✦</span>
+    <span class="particle p2">✦</span>
+    <span class="particle p3">+</span>
+    <span class="particle p4">✦</span>
+    <span class="particle p5">+</span>
+    <span class="particle p6">✦</span>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon"><i class="fas fa-heart-pulse"></i></span>
+        <span>Miki</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"         class="nav-link active">Home</a></li>
+        <li><a href="#about"        class="nav-link">About</a></li>
+        <li><a href="#education"    class="nav-link">Education</a></li>
+        <li><a href="#skills"       class="nav-link">Skills</a></li>
+        <li><a href="#experience"   class="nav-link">Experience</a></li>
+        <li><a href="#professional-activity" class="nav-link">Activity</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact"      class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <!-- Dark mode toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <span class="toggle-track">
+            <span class="toggle-icons">
+              <i class="fas fa-sun  sun-icon"></i>
+              <i class="fas fa-moon moon-icon"></i>
+            </span>
+            <span class="toggle-thumb"></span>
+          </span>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+
+      <div class="hero-text reveal-left">
+        <div class="hero-tag">
+          <span class="pulse-dot"></span>
+          BSc in Nursing Student
+        </div>
+        <h1 class="hero-name">
+          Sabikun<br/>
+          <em>Nahar Miki</em>
+        </h1>
+        <p class="hero-desc">
+          A dedicated and compassionate nursing student committed to providing quality patient care and contributing to the healthcare sector. Passionate about learning, improving clinical skills, and making a meaningful impact on people's lives through service and care.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary"><i class="fas fa-envelope"></i> Get in Touch</a>
+          <a href="#about"   class="btn btn-ghost">Discover More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">3rd</span><span class="stat-label">Year Student</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Hospitals</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">9th</span><span class="stat-label">DU Rank</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal-right">
+        <div class="profile-ring">
+          <div class="profile-card">
+            <div class="profile-img-wrap">
+              <img src="own.jpg" alt="Sabikun Nahar Miki" class="profile-img">
+              <div class="profile-badge"><i class="fas fa-stethoscope"></i></div>
+            </div>
+            <div class="profile-info">
+              <strong>Sabikun Nahar Miki</strong>
+              <span>Grameen Caledonian College of Nursing</span>
+            </div>
+          </div>
+          <div class="ring ring-1"></div>
+          <div class="ring ring-2"></div>
+        </div>
+        <div class="float-card fc-1"><i class="fas fa-heart-pulse"></i><span>Patient Care</span></div>
+        <div class="float-card fc-2"><i class="fas fa-star" style="color:#f6c90e"></i><span>GPA 5.00</span></div>
+        <div class="float-card fc-3"><i class="fas fa-graduation-cap"></i><span>NCLEX Goal</span></div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <em>Me</em></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-img-col reveal-left">
+          <div class="about-img-frame">
+            <img src="own2.jpg" alt="Sabikun Nahar Miki" class="about-img">
+            <div class="about-deco-1"></div>
+            <div class="about-deco-2"></div>
+          </div>
+        </div>
+        <div class="about-content reveal-right">
+          <p class="about-text">I am a motivated BSc in Nursing student currently studying at <strong>Grameen Caledonian College of Nursing</strong>. I have a strong passion for healthcare and patient well-being, and I am committed to developing my clinical knowledge and practical skills.</p>
+          <p class="about-text">Through my academic journey and clinical training, I have gained hands-on experience in patient care, communication, and medical procedures. I believe in <em>empathy, responsibility, and continuous learning</em> as the foundation of a successful nursing career.</p>
+          <div class="objective-card glass-card reveal-up">
+            <div class="obj-icon"><i class="fas fa-bullseye"></i></div>
+            <div>
+              <h4>Career Objective</h4>
+              <p>My goal is to pursue a Master's degree after my BSc in Nursing, followed by a PhD to advance my research skills. I also aim to pass the <strong>NCLEX examination</strong> for international nursing competence, and aspire to work with a reputed organization to improve healthcare services.</p>
+            </div>
+          </div>
+          <div class="about-values">
+            <div class="value-pill"><i class="fas fa-hand-holding-heart"></i> Empathy</div>
+            <div class="value-pill"><i class="fas fa-shield-heart"></i> Responsibility</div>
+            <div class="value-pill"><i class="fas fa-book-open"></i> Learning</div>
+            <div class="value-pill"><i class="fas fa-users"></i> Teamwork</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section education-section" id="education">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Academic Journey</span>
+        <h2 class="section-title">My <em>Education</em></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal-up" data-delay="0">
+          <div class="timeline-dot current"><i class="fas fa-graduation-cap"></i></div>
+          <div class="timeline-card glass-card">
+            <div class="tl-header">
+              <div class="tl-info">
+                <div class="tl-badge current-badge">Current</div>
+                <h3>BSc in Nursing</h3>
+                <h4>Grameen Caledonian College of Nursing</h4>
+              </div>
+              <img src="clg.jpg" alt="College Logo" class="clg-logo">
+            </div>
+            <span class="tl-year">2023 – Present · 3rd Year</span>
+            <p>Building clinical and academic excellence in nursing practice.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-up" data-delay="100">
+          <div class="timeline-dot"><i class="fas fa-star"></i></div>
+          <div class="timeline-card glass-card">
+            <div class="tl-badge gold">GPA 5.00</div>
+            <h3>HSC</h3>
+            <h4>Barishal Govt Model School and College</h4>
+            <span class="tl-year">2021</span>
+            <p>Achieved the highest GPA of 5.00, demonstrating exceptional academic performance.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-up" data-delay="200">
+          <div class="timeline-dot"><i class="fas fa-book"></i></div>
+          <div class="timeline-card glass-card">
+            <div class="tl-badge pink">GPA 4.50</div>
+            <h3>SSC</h3>
+            <h4>Shayestabad M.H. High School</h4>
+            <span class="tl-year">2019</span>
+          </div>
+        </div>
+        <div class="timeline-item reveal-up" data-delay="300">
+          <div class="timeline-dot"><i class="fas fa-pencil"></i></div>
+          <div class="timeline-card glass-card">
+            <div class="tl-badge gold">GPA 5.00</div>
+            <h3>JSC</h3>
+            <h4>Shayestabad M.H. High School</h4>
+            <span class="tl-year">2017</span>
+          </div>
+        </div>
+        <div class="timeline-item reveal-up" data-delay="400">
+          <div class="timeline-dot"><i class="fas fa-seedling"></i></div>
+          <div class="timeline-card glass-card">
+            <div class="tl-badge lavender">GPA 4.83</div>
+            <h3>PSC</h3>
+            <h4>Charaicha Government Primary School</h4>
+            <span class="tl-year">2013</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Capabilities</span>
+        <h2 class="section-title">Clinical & Soft <em>Skills</em></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skills-col reveal-left">
+          <h3 class="skills-subtitle"><i class="fas fa-stethoscope"></i> Clinical Skills</h3>
+          <div class="skill-cards-grid">
+            <div class="skill-card glass-card"><div class="sk-icon"><i class="fas fa-heart-pulse"></i></div><span>Patient Care</span></div>
+            <div class="skill-card glass-card"><div class="sk-icon"><i class="fas fa-thermometer"></i></div><span>Vital Signs</span></div>
+            <div class="skill-card glass-card"><div class="sk-icon"><i class="fas fa-pills"></i></div><span>Medication Admin</span></div>
+            <div class="skill-card glass-card"><div class="sk-icon"><i class="fas fa-bandage"></i></div><span>Wound Care</span></div>
+            <div class="skill-card glass-card"><div class="sk-icon"><i class="fas fa-syringe"></i></div><span>Clinical Procedures</span></div>
+            <div class="skill-card glass-card"><div class="sk-icon"><i class="fas fa-clipboard-list"></i></div><span>Documentation</span></div>
+            <div class="skill-card glass-card"><div class="sk-icon"><i class="fas fa-kit-medical"></i></div><span>Emergency Care (BLS)</span></div>
+            <div class="skill-card glass-card"><div class="sk-icon"><i class="fas fa-comments"></i></div><span>Patient Communication</span></div>
+            <div class="skill-card glass-card"><div class="sk-icon"><i class="fas fa-shield-virus"></i></div><span>Aseptic Technique</span></div>
+            <div class="skill-card glass-card"><div class="sk-icon"><i class="fas fa-monitor-waveform"></i></div><span>Patient Monitoring</span></div>
+          </div>
+        </div>
+        <div class="skills-col reveal-right">
+          <h3 class="skills-subtitle"><i class="fas fa-brain"></i> Soft Skills</h3>
+          <div class="soft-skills-wrap">
+            <div class="soft-skill-item"><div class="ss-label"><i class="fas fa-comment-dots"></i> Communication</div><div class="ss-bar"><div class="ss-fill" style="--w:90%"></div></div></div>
+            <div class="soft-skill-item"><div class="ss-label"><i class="fas fa-hand-holding-heart"></i> Empathy</div><div class="ss-bar"><div class="ss-fill" style="--w:95%"></div></div></div>
+            <div class="soft-skill-item"><div class="ss-label"><i class="fas fa-users"></i> Teamwork</div><div class="ss-bar"><div class="ss-fill" style="--w:88%"></div></div></div>
+            <div class="soft-skill-item"><div class="ss-label"><i class="fas fa-person-chalkboard"></i> Leadership</div><div class="ss-bar"><div class="ss-fill" style="--w:80%"></div></div></div>
+            <div class="soft-skill-item"><div class="ss-label"><i class="fas fa-chalkboard-teacher"></i> Teaching</div><div class="ss-bar"><div class="ss-fill" style="--w:82%"></div></div></div>
+            <div class="soft-skill-item"><div class="ss-label"><i class="fas fa-clock"></i> Time Management</div><div class="ss-bar"><div class="ss-fill" style="--w:85%"></div></div></div>
+          </div>
+          <h3 class="skills-subtitle mt-lg"><i class="fas fa-laptop"></i> Technical Skills</h3>
+          <div class="tech-badges">
+            <span class="tech-badge"><i class="fab fa-microsoft"></i> Microsoft Word</span>
+            <span class="tech-badge"><i class="fas fa-file-powerpoint"></i> PowerPoint</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section experience-section" id="experience">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Hands-on Training</span>
+        <h2 class="section-title">Clinical <em>Experience</em></h2>
+      </div>
+      <p class="exp-intro reveal-up">Through rigorous clinical rotations across multiple prestigious hospitals, I have developed comprehensive hands-on skills in patient care, emergency response, and multidisciplinary teamwork. Each placement has deepened my ability to apply theoretical knowledge in real-world healthcare settings with compassion and precision.</p>
+      <div class="hospital-grid">
+        <div class="hospital-card glass-card reveal-up" data-delay="0">
+          <div class="hosp-icon"><i class="fas fa-hospital"></i></div>
+          <h3>Shahid Ahsanullah Master General Hospital</h3>
+          <p>Intensive clinical training in general medicine and surgical wards, gaining experience in post-operative care and emergency procedures.</p>
+          <div class="hosp-tags"><span>General Medicine</span><span>Surgical Ward</span></div>
+        </div>
+        <div class="hospital-card glass-card reveal-up" data-delay="100">
+          <div class="hosp-icon"><i class="fas fa-heart"></i></div>
+          <h3>Kuwait Bangladesh Friendship Hospital</h3>
+          <p>Focused training in specialized care units, developing advanced patient monitoring and medication management skills.</p>
+          <div class="hosp-tags"><span>Specialized Care</span><span>Medication Mgmt</span></div>
+        </div>
+        <div class="hospital-card glass-card reveal-up" data-delay="200">
+          <div class="hosp-icon"><i class="fas fa-bone"></i></div>
+          <h3>National Institute of Traumatology & Orthopedic Rehabilitation</h3>
+          <p>Specialized training in orthopedic nursing, rehabilitation care, and trauma patient management with interdisciplinary teams.</p>
+          <div class="hosp-tags"><span>Orthopedic Care</span><span>Rehabilitation</span></div>
+        </div>
+        <div class="hospital-card glass-card reveal-up" data-delay="300">
+          <div class="hosp-icon"><i class="fas fa-stethoscope"></i></div>
+          <h3>Kurmitola General Hospital</h3>
+          <p>Comprehensive training across multiple departments including medicine, surgery, and outpatient services.</p>
+          <div class="hosp-tags"><span>Multi-dept</span><span>OPD Services</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROFESSIONAL ACTIVITY ===== -->
+  <section class="section professional-activity-section" id="professional-activity">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Clinical Field Experience</span>
+        <h2 class="section-title">International Nurses Day <em>Health Campaign</em></h2>
+      </div>
+      
+      <div class="activity-subtitle reveal-up">
+        <h3>Clinical Practice & Community Health Engagement</h3>
+      </div>
+
+      <div class="activity-description reveal-up">
+        <p>As part of our clinical practice and professional development, we participated in a two-day health campaign organized by Grameen Caledonian College of Nursing under the Health Services division on the occasion of International Nurses Day.</p>
+        <p>The program was conducted at Yunus Centre and Grameen Telecom, where we provided basic health check-ups, health awareness support, wellness guidance, and patient communication services for employees and participants.</p>
+        <p>This experience helped strengthen practical nursing skills, teamwork, clinical communication, and real-world healthcare experience.</p>
+      </div>
+
+      <!-- Activity Cards -->
+      <div class="activity-cards-grid">
+        <div class="activity-card glass-card reveal-up" data-delay="0">
+          <div class="activity-card-icon"><i class="fas fa-heartbeat"></i></div>
+          <h4>Health Check-up</h4>
+          <p>Comprehensive vital signs assessment and health screening for participants</p>
+        </div>
+        <div class="activity-card glass-card reveal-up" data-delay="100">
+          <div class="activity-card-icon"><i class="fas fa-thermometer"></i></div>
+          <h4>Vital Signs Monitoring</h4>
+          <p>Accurate recording and monitoring of blood pressure, pulse, and temperature</p>
+        </div>
+        <div class="activity-card glass-card reveal-up" data-delay="200">
+          <div class="activity-card-icon"><i class="fas fa-stethoscope"></i></div>
+          <h4>Health Awareness Counseling</h4>
+          <p>Providing health education and awareness support on wellness and disease prevention</p>
+        </div>
+        <div class="activity-card glass-card reveal-up" data-delay="300">
+          <div class="activity-card-icon"><i class="fas fa-comments"></i></div>
+          <h4>Patient Communication & Support</h4>
+          <p>Compassionate communication and guidance for participants and their families</p>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-header reveal-up">
+        <h3>Experience Gallery</h3>
+        <p>Moments from the health campaign</p>
+      </div>
+      <div class="image-gallery">
+        <div class="gallery-item reveal-up" data-delay="0">
+          <div class="gallery-img-wrapper">
+            <img src="yu1.jpg" alt="Health Check-up Activity" class="gallery-img">
+            <div class="gallery-overlay">
+              <span class="gallery-label">Health Assessment</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up" data-delay="100">
+          <div class="gallery-img-wrapper">
+            <img src="yu2.jpg" alt="Team Engagement" class="gallery-img">
+            <div class="gallery-overlay">
+              <span class="gallery-label">Team Engagement</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up" data-delay="200">
+          <div class="gallery-img-wrapper">
+            <img src="yu3.jpg" alt="Patient Counseling" class="gallery-img">
+            <div class="gallery-overlay">
+              <span class="gallery-label">Patient Counseling</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up">
+          <div class="gallery-img-wrapper">
+            <img src="yu4.jpg" alt="Community Health" class="gallery-img">
+            <div class="gallery-overlay">
+              <span class="gallery-label">Community Impact</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up">
+          <div class="gallery-img-wrapper">
+            <img src="yu5.jpg" alt="Healthcare Campaign" class="gallery-img">
+            <div class="gallery-overlay">
+              <span class="gallery-label">Healthcare Campaign</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up">
+          <div class="gallery-img-wrapper">
+            <img src="yu6.jpg" alt="Nursing Practice" class="gallery-img">
+            <div class="gallery-overlay">
+              <span class="gallery-label">Nursing Practice</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up">
+          <div class="gallery-img-wrapper">
+            <img src="yu7.jpg" alt="Clinical Service" class="gallery-img">
+            <div class="gallery-overlay">
+              <span class="gallery-label">Clinical Service</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up">
+          <div class="gallery-img-wrapper">
+            <img src="yu8.jpg" alt="Patient Care" class="gallery-img">
+            <div class="gallery-overlay">
+              <span class="gallery-label">Patient Care</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up">
+          <div class="gallery-img-wrapper">
+            <img src="yu9.jpg" alt="Health Screening" class="gallery-img">
+            <div class="gallery-overlay">
+              <span class="gallery-label">Health Screening</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up">
+          <div class="gallery-img-wrapper">
+            <img src="yu10.jpg" alt="Medical Camp" class="gallery-img">
+            <div class="gallery-overlay">
+              <span class="gallery-label">Medical Camp</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up">
+          <div class="gallery-img-wrapper">
+            <img src="yu11.jpg" alt="Team Work" class="gallery-img">
+            <div class="gallery-overlay">
+              <span class="gallery-label">Team Collaboration</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up">
+          <div class="gallery-img-wrapper">
+            <img src="yu12.jpg" alt="Nursing Excellence" class="gallery-img">
+            <div class="gallery-overlay">
+              <span class="gallery-label">Nursing Excellence</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up">
+          <div class="gallery-img-wrapper">
+            <img src="yu13.jpg" alt="Community Wellness" class="gallery-img">
+            <div class="gallery-overlay">
+              <span class="gallery-label">Community Wellness</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up">
+          <div class="gallery-img-wrapper">
+            <img src="yu14.jpg" alt="Professional Practice" class="gallery-img">
+            <div class="gallery-overlay">
+              <span class="gallery-label">Professional Practice</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience Badge -->
+      <div class="experience-badge reveal-up">
+        <i class="fas fa-certificate"></i>
+        <span>Clinical Field Experience 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section class="section achievements-section" id="achievements">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Recognition</span>
+        <h2 class="section-title">Certifications & <em>Achievements</em></h2>
+      </div>
+      <div class="achieve-grid">
+        <div class="achieve-highlight reveal-up">
+          <div class="ach-glow-ring"></div>
+          <div class="ach-inner glass-card">
+            <div class="ach-trophy"><i class="fas fa-trophy"></i></div>
+            <div class="ach-content">
+              <h3>🏆 9th Position</h3>
+              <h4>Dhaka University Nursing Program</h4>
+              <p>Secured 9th position among all students in the 2nd Year Dhaka University Nursing examinations — a testament to academic dedication and clinical excellence.</p>
+            </div>
+            <img src="achive.jpg" alt="Achievement Certificate" class="ach-img">
+          </div>
+        </div>
+        <div class="cert-cards reveal-right">
+          <div class="cert-card glass-card">
+            <div class="cert-icon"><i class="fas fa-check-circle"></i></div>
+            <div><h4>Academic & Clinical Modules</h4><p>Completed all academic and clinical training modules successfully.</p></div>
+          </div>
+          <div class="cert-card glass-card">
+            <div class="cert-icon"><i class="fas fa-award"></i></div>
+            <div><h4>Professional Recognition</h4><p>Recognized for professionalism and patient-centered care during clinical placements.</p></div>
+          </div>
+          <div class="cert-card glass-card">
+            <div class="cert-icon"><i class="fas fa-star"></i></div>
+            <div><h4>Academic Consistency</h4><p>Multiple GPA 5.00 achievements demonstrating consistent academic excellence.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Research -->
+      <div class="section-header reveal-up" style="margin-top:5rem">
+        <span class="section-tag">Academic Work</span>
+        <h2 class="section-title">Research & <em>Case Studies</em></h2>
+      </div>
+      <div class="research-grid">
+        <div class="research-card glass-card reveal-up" data-delay="0"><div class="res-num">01</div><div class="res-icon"><i class="fas fa-bed-pulse"></i></div><h4>Post-Operative Patient Care</h4><p>Evidence-based post-surgical nursing protocols and recovery optimization.</p></div>
+        <div class="research-card glass-card reveal-up" data-delay="100"><div class="res-num">02</div><div class="res-icon"><i class="fas fa-shield-virus"></i></div><h4>Infection Control & Wound Management</h4><p>Advanced wound care techniques and hospital-acquired infection prevention.</p></div>
+        <div class="research-card glass-card reveal-up" data-delay="200"><div class="res-num">03</div><div class="res-icon"><i class="fas fa-bone"></i></div><h4>Orthopedic Patient Care</h4><p>Rehabilitation nursing for orthopedic patients and mobility restoration plans.</p></div>
+        <div class="research-card glass-card reveal-up" data-delay="300"><div class="res-num">04</div><div class="res-icon"><i class="fas fa-clipboard-check"></i></div><h4>Patient Assessment & Care Planning</h4><p>Holistic patient assessment and individualized nursing care planning.</p></div>
+      </div>
+
+      <!-- Certificates -->
+      <div class="section-header reveal-up" style="margin-top:5rem">
+        <span class="section-tag">Credentials</span>
+        <h2 class="section-title">My <em>Certificates</em></h2>
+      </div>
+      <div class="certificates-grid">
+        <div class="certificate-frame reveal-up">
+          <div class="certificate-item">
+            <img src="certi.jpg" alt="Certificate" class="photo-frame">
+            <h4>Nursing Excellence Certificate</h4>
+            <p>This certificate acknowledges my outstanding performance and dedication in nursing education, highlighting my commitment to patient care and clinical excellence.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Volunteer -->
+      <div class="section-header reveal-up" style="margin-top:5rem">
+        <span class="section-tag">Community</span>
+        <h2 class="section-title">Volunteer & <em>Community Service</em></h2>
+      </div>
+      <div class="volunteer-list reveal-up">
+        <div class="vol-item"><div class="vol-icon"><i class="fas fa-hands-helping"></i></div><span>Assisted patients with daily care activities and personal hygiene</span></div>
+        <div class="vol-item"><div class="vol-icon"><i class="fas fa-user-doctor"></i></div><span>Supported healthcare teams during high-pressure clinical situations</span></div>
+        <div class="vol-item"><div class="vol-icon"><i class="fas fa-people-arrows"></i></div><span>Guided patients and their families through care procedures</span></div>
+        <div class="vol-item"><div class="vol-icon"><i class="fas fa-spray-can-sparkles"></i></div><span>Maintained hygiene, sanitation and safety standards in clinical areas</span></div>
+        <div class="vol-item"><div class="vol-icon"><i class="fas fa-heart"></i></div><span>Demonstrated empathy, active listening and compassionate patient interaction</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="section-title">Get in <em>Touch</em></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <p class="contact-intro">Whether you have a professional inquiry, collaboration opportunity, or just want to connect — I'd love to hear from you.</p>
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+            <div><span class="ci-label">Email</span><a href="mailto:sabikunnaharmiki@gmail.com">sabikunnaharmiki@gmail.com</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fas fa-phone"></i></div>
+            <div><span class="ci-label">Phone</span><a href="tel:+8801708443684">01708443684</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div><span class="ci-label">Location</span><span>Bangladesh</span></div>
+          </div>
+          <div class="social-links">
+            <a href="https://www.facebook.com/sabikunnahar.miki.1" target="_blank" rel="noopener" class="social-btn facebook"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+            <a href="https://www.instagram.com/mi_kiii1212/" target="_blank" rel="noopener" class="social-btn instagram"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal-right">
+          <form class="contact-form glass-card" id="contactForm">
+            <h3>Send a Message</h3>
+            <div class="form-group"><label for="cname">Your Name</label><input type="text" id="cname" placeholder="Enter your name" required/></div>
+            <div class="form-group"><label for="cemail">Your Email</label><input type="email" id="cemail" placeholder="Enter your email" required/></div>
+            <div class="form-group"><label for="csubject">Subject</label><input type="text" id="csubject" placeholder="What's this about?"/></div>
+            <div class="form-group"><label for="cmessage">Message</label><textarea id="cmessage" rows="5" placeholder="Your message..." required></textarea></div>
+            <button type="submit" class="btn btn-primary full-width"><i class="fas fa-paper-plane"></i> Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo"><i class="fas fa-heart-pulse"></i><span>Sabikun Nahar Miki</span></div>
+      <p class="footer-text">BSc in Nursing Student · Passionate about Healthcare · Committed to Excellence</p>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/sabikunnahar.miki.1" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/mi_kiii1212/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:sabikunnaharmiki@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p class="footer-copy">© 2026 Sabikun Nahar Miki · Made with professional care · All rights reserved</p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+
+  <script>
+    /* ── Theme Toggle ── */
+    const html = document.documentElement;
+    const themeBtn = document.getElementById('themeToggle');
+    const saved = localStorage.getItem('theme') || 'light';
+    html.setAttribute('data-theme', saved);
+
+    themeBtn.addEventListener('click', () => {
+      const next = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      html.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+
+    /* ── Navbar ── */
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    /* ── Mobile menu ── */
+    const toggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      toggle.classList.toggle('active');
+    });
+    document.querySelectorAll('.nav-link').forEach(l => l.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      toggle.classList.remove('active');
+    }));
+
+    /* ── Active nav ── */
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+      let pos = window.scrollY + 120;
+      sections.forEach(s => {
+        if (pos >= s.offsetTop && pos < s.offsetTop + s.offsetHeight) {
+          document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+          const a = document.querySelector(`.nav-link[href="#${s.id}"]`);
+          if (a) a.classList.add('active');
+        }
+      });
+    });
+
+    /* ── Scroll Reveal (with staggering) ── */
+    const revealObserver = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          const delay = parseInt(e.target.dataset.delay || 0);
+          setTimeout(() => {
+            e.target.classList.add('visible');
+          }, delay);
+          revealObserver.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    // Apply staggering to grids automatically
+    document.querySelectorAll('.skill-cards-grid, .hospital-grid, .activity-cards-grid, .research-grid, .timeline').forEach(grid => {
+      const children = grid.querySelectorAll('.reveal-up, .timeline-item');
+      children.forEach((child, index) => {
+        if (!child.dataset.delay) {
+          child.dataset.delay = index * 100;
+        }
+      });
+    });
+
+    document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right, .timeline-item').forEach(el => revealObserver.observe(el));
+
+    /* ── Skill bars ── */
+    const barObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.querySelectorAll('.ss-fill').forEach(f => f.classList.add('animate'));
+          barObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    document.querySelectorAll('.soft-skills-wrap').forEach(el => barObs.observe(el));
+
+    /* ── Scroll top ── */
+    const scrollTopBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => scrollTopBtn.classList.toggle('visible', window.scrollY > 400));
+    scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    /* ── Form ── */
+    document.getElementById('contactForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const btn = e.target.querySelector('button[type="submit"]');
+      btn.innerHTML = '<i class="fas fa-check"></i> Sent!';
+      btn.style.background = 'linear-gradient(135deg, #16A34A, #0B6E3D)';
+      setTimeout(() => { btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message'; btn.style.background = ''; e.target.reset(); }, 3000);
+    });
+
+    /* ── Magnetic Buttons ── */
+    const magneticBtns = document.querySelectorAll('.btn-primary, .btn-ghost');
+    magneticBtns.forEach(btn => {
+      btn.addEventListener('mousemove', e => {
+        const rect = btn.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        btn.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px) scale(1.05)`;
+      });
+      btn.addEventListener('mouseleave', () => {
+        btn.style.transform = '';
+      });
+    });
+
+    /* ── Parallax blobs & Cursor Follower ── */
+    const follower = document.getElementById('cursorFollower');
+    window.addEventListener('mousemove', e => {
+      // Cursor follower
+      if (follower) {
+        follower.style.left = e.clientX + 'px';
+        follower.style.top = e.clientY + 'px';
+      }
+
+      // Parallax blobs
+      const x = (e.clientX / window.innerWidth - .5) * 20;
+      const y = (e.clientY / window.innerHeight - .5) * 20;
+      document.querySelectorAll('.blob').forEach((b, i) => {
+        const f = (i + 1) * .4;
+        b.style.transform = `translate(${x*f}px,${y*f}px)`;
+      });
+    });
+  </script>
+</body>
+</html>
